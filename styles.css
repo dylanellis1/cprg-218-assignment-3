@@ -12,17 +12,6 @@ body {
   color: #1e3d59; /* dark blue-grey */
 }
 
-/* Global Header Styles */
-.header-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #e4d9c2; /* Darker brown */
-}
-
 /* Layout Container */
 .container {
   max-width: 1200px;
@@ -1356,17 +1345,17 @@ body {
   background-color: #fefaf3; /* sandy cream */
 }
 
-/* Header */
+/* Global Header Styles */
 .header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem;
-  background-color: #fefaf3;
-  max-width: 1200px;
-  margin: 0 auto;
+  background-color: #e4d9c2; /* Darker brown */
+  border-bottom: 1px solid #ccc5b9; 
 }
-
 .header-container .logo {
   height: 50px;
 }
@@ -1509,13 +1498,16 @@ body {
   background-color: #f9f9f9;
 }
 
-/* Header */
+/* Global Header Styles */
 .header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem;
-  background-color: #fefaf3;
+  background-color: #e4d9c2; /* Darker brown */
+  border-bottom: 1px solid #ccc5b9; /* Optional: Add a subtle border for separation */
 }
 
 .header-container .logo {
