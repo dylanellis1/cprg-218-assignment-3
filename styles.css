@@ -339,14 +339,6 @@ footer nav a:hover {
   filter: grayscale(0%);
 }
 
-/* Image Grid (if you plan to add team images, location, etc.) */
-.image-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1rem;
-  margin-top: 2rem;
-}
-
 .image-grid img {
   width: 100%;
   height: auto;
@@ -367,6 +359,16 @@ footer nav a:hover {
   padding: 0 1rem;
 }
 /* Accommodations Page Styles */
+
+/* Header */
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 .main-nav {
   display: flex;
