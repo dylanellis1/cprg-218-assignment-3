@@ -368,16 +368,6 @@ footer nav a:hover {
 }
 /* Accommodations Page Styles */
 
-/* Header */
-.header-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .main-nav {
   display: flex;
   gap: 1.5rem;
