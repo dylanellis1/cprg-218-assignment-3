@@ -361,6 +361,12 @@ footer nav a:hover {
 /* Accommodations Page Styles */
 
 /* Header */
+header {
+  background-color: #e4d9c2;
+  width: 100%;
+  padding: 10px 0;
+}
+
 .header-container {
   max-width: 1200px;
   margin: 0 auto;
