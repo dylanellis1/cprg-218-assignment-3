@@ -17,10 +17,12 @@ fetch(url)
     const icon = data.weather[0].icon;
 
     const html = `
-      <h3>Weather in ${city}</h3>
-      <img src="https://openweathermap.org/img/wn/${icon}@2x.png" alt="${desc}" />
-      <p><strong>${temp}°C</strong></p>
-      <p>${desc.charAt(0).toUpperCase() + desc.slice(1)}</p>
+      <div style="text-align:center;">
+        <h3 style="margin-bottom: 0.5rem;">Weather in ${city}</h3>
+        <img src="https://openweathermap.org/img/wn/${icon}@2x.png" alt="${desc}" style="width:60px;" />
+        <p style="margin: 0;"><strong>${temp}°C</strong></p>
+        <p style="margin: 0;">${desc.charAt(0).toUpperCase() + desc.slice(1)}</p>
+      </div>
     `;
     document.getElementById("weather-widget").innerHTML = html;
   })
