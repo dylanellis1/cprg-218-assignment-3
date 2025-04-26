@@ -271,6 +271,7 @@ footer nav a:hover {
     font-size: 1rem;
   }
 }
+
 /* About Section */
 .about-section {
   background-color: #fffdf9;
@@ -399,7 +400,7 @@ footer nav a:hover {
 .page-intro {
   text-align: center;
   padding: 4rem 1rem;
-  background-color: #ccc5b9; /* sandy cream */
+  background-color: #fefaf3; /* sandy cream */
 }
 
 .page-intro h1 {
