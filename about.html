@@ -24,31 +24,34 @@
         </ul>
       </nav>
       <div id="weather">
-        <script>
-          const apiKey = "4e5e576e864142e780a45600252403";
-          const city = "Cancun";
-          const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-        
-          fetch(url)
-            .then(response => response.json())
-            .then(data => {
-              const temp = data.main.temp;
-              const desc = data.weather[0].description;
-              const icon = data.weather[0].icon;
-              const widget = `
-                <h3>Weather in ${city}</h3>
-                <img src="https://openweathermap.org/img/wn/${icon}.png" alt="${desc}" />
-                <p><strong>${temp}°C</strong></p>
-                <p>${desc.charAt(0).toUpperCase() + desc.slice(1)}</p>
-              `;
-              document.getElementById('weather').innerHTML = widget;
-            })
-            .catch(() => {
-              document.getElementById('weather').innerHTML = "<p>Weather info not available.</p>";
-            });
-        </script>
-        <p>Weather: Cancun</p>
+        <p>Loading weather...</p>
       </div>
+      <script>
+        const apiKey = "4e5e576e864142e780a45600252403";
+        const city = "Cancun";
+        const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+      
+        fetch(url)
+          .then(response => {
+            if (!response.ok) throw new Error("Weather data not found");
+            return response.json();
+          })
+          .then(data => {
+            const temp = data.main.temp;
+            const desc = data.weather[0].description;
+            const icon = data.weather[0].icon;
+            const widget = `
+              <h3>Weather in ${city}</h3>
+              <img src="https://openweathermap.org/img/wn/${icon}@2x.png" alt="${desc}" />
+              <p><strong>${temp.toFixed(1)}°C</strong></p>
+              <p>${desc.charAt(0).toUpperCase() + desc.slice(1)}</p>
+            `;
+            document.getElementById('weather').innerHTML = widget;
+          })
+          .catch(() => {
+            document.getElementById('weather').innerHTML = "<p>Weather info not available.</p>";
+          });
+      </script>      
     </div>
   </header>
 
