@@ -30,7 +30,7 @@
         const apiKey = "4e5e576e864142e780a45600252403";
         const city = "Cancun";
         const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-      
+        <h2>Temperature: <span id="temp"></span>°C</h2>
         fetch(url)
           .then(response => {
             if (!response.ok) throw new Error("Weather data not found");
