@@ -1342,7 +1342,7 @@ footer nav a:hover {
 body {
   font-family: 'Poppins', sans-serif;
   color: #1e3d59;
-  background-color: #f9f9f9;
+  background-color: #fefaf3; /* sandy cream */
 }
 
 /* Header */
@@ -1352,6 +1352,8 @@ body {
   align-items: center;
   padding: 1.5rem;
   background-color: #fefaf3;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .header-container .logo {
