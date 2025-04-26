@@ -271,7 +271,6 @@ footer nav a:hover {
     font-size: 1rem;
   }
 }
-
 /* About Section */
 .about-section {
   background-color: #fffdf9;
@@ -1342,20 +1341,18 @@ footer nav a:hover {
 body {
   font-family: 'Poppins', sans-serif;
   color: #1e3d59;
-  background-color: #fefaf3; /* sandy cream */
+  background-color: #f9f9f9;
 }
 
-/* Global Header Styles */
+/* Header */
 .header-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #e4d9c2; /* Darker brown */
-  border-bottom: 1px solid #ccc5b9; 
+  padding: 1.5rem;
+  background-color: #fefaf3;
 }
+
 .header-container .logo {
   height: 50px;
 }
@@ -1498,16 +1495,13 @@ body {
   background-color: #f9f9f9;
 }
 
-/* Global Header Styles */
+/* Header */
 .header-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #e4d9c2; /* Darker brown */
-  border-bottom: 1px solid #ccc5b9; /* Optional: Add a subtle border for separation */
+  padding: 1.5rem;
+  background-color: #fefaf3;
 }
 
 .header-container .logo {
