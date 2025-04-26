@@ -226,21 +226,6 @@ footer nav a:hover {
   height: 24px;
 }
 
-/* Weather Widget */
-#weather,
-#weather-widget {
-  background-color: #d8f3f9;
-  padding: 1rem;
-  border-radius: 10px;
-  margin-top: 1rem;
-  text-align: center;
-}
-
-#weather img,
-#weather-widget img {
-  width: 50px;
-}
-
 /* Gallery Scroll Section */
 .image-scroll-gallery {
   display: flex;
@@ -414,7 +399,7 @@ footer nav a:hover {
 .page-intro {
   text-align: center;
   padding: 4rem 1rem;
-  background-color: #fefaf3; /* sandy cream */
+  background-color: #ccc5b9; /* sandy cream */
 }
 
 .page-intro h1 {
