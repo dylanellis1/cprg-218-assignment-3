@@ -176,4 +176,242 @@
       gap: 0.75rem;
     }
   }
-  
+  /* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background-color: #fefaf3; /* sandy cream */
+  color: #1e3d59; /* dark blue-grey */
+}
+
+/* Header */
+header {
+  background-color: #e4d9c2; /* warm sand */
+  border-bottom: 1px solid #ccc5b9;
+  padding: 1rem 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Header Flex */
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 60px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #1e3d59;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+  color: #0077b6; /* tropical blue */
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 90vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+#heroVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #0077b6;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #005f86;
+}
+
+/* Intro Section */
+.intro {
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.intro h2 {
+  font-size: 2.5rem;
+  color: #0077b6;
+  margin-bottom: 1rem;
+}
+
+.intro p {
+  font-size: 1.25rem;
+  color: #1e3d59;
+}
+
+/* Footer */
+footer {
+  background-color: #e4d9c2;
+  border-top: 1px solid #ccc5b9;
+  padding: 2rem 1rem;
+}
+
+.footer-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-flex img {
+  height: 50px;
+}
+
+footer nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+footer nav a {
+  text-decoration: none;
+  color: #1e3d59;
+  font-size: 0.95rem;
+}
+
+footer nav a:hover {
+  color: #0077b6;
+}
+
+.socials {
+  display: flex;
+  gap: 1rem;
+}
+
+.socials img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Weather Widget */
+#weather {
+  background-color: #d8f3f9;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+#weather img {
+  width: 50px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header-flex,
+  .footer-flex {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+}
+/* Universal Image Styles */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 8px; /* Optional: makes corners slightly rounded */
+}
+
+/* Specific Control for Logos */
+.logo, 
+.footer-flex img {
+  height: 60px; /* or 50px for footer if you prefer */
+  width: auto;
+  object-fit: contain;
+  border-radius: 0; /* logos usually stay sharp and square */
+}
+
+/* Social Icons */
+.socials img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  border-radius: 0; /* no rounding on social icons */
+}
+
+/* Gallery or Larger Display Images */
+.gallery-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px; /* a little extra for big pictures */
+}
