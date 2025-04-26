@@ -337,16 +337,6 @@ footer nav a:hover {
   color: #0077b6;
 }
 
-.socials {
-  display: flex;
-  gap: 1rem;
-}
-
-.socials img {
-  width: 10px;
-  height: 10px;
-}
-
 /* Weather Widget */
 #weather {
   background-color: #d8f3f9;
